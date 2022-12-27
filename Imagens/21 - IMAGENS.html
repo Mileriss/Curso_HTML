@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> IMAGENS </title>
+  </head>
+  <body>
+    <h1> IMAGENS </h1>
+    <p> Sintaxe de imagens HTML
+        A tag HTML <img> é usada para incorporar uma imagem em uma página da web.
+        
+        As imagens não são tecnicamente inseridas em uma página da web; as imagens estão vinculadas a páginas da web. A <img>tag cria um espaço de retenção para a imagem referenciada.
+        
+        A <img> tag está vazia, contém apenas atributos e não possui uma tag de fechamento.
+        
+        A <img> tag tem dois atributos obrigatórios:
+        
+        src - Especifica o caminho para a imagem
+        alt - Especifica um texto alternativo para a imagem
+        
+        <img src="url" alt="alternatetext"> </p>
+
+O atributo src
+O srcatributo obrigatório especifica o caminho (URL) para a imagem.
+<img src="img_chania.jpg" alt="Flowers in Chania">
+
+
+O atributo alt
+O alt atributo required fornece um texto alternativo para uma imagem, se o usuário por algum motivo não puder visualizá-la (devido à conexão lenta, um erro no atributo src ou se o usuário usar um leitor de tela).
+
+O valor do altatributo deve descrever a imagem:
+<img src="img_chania.jpg" alt="Flowers in Chania">
+
+Se um navegador não encontrar uma imagem, ele exibirá o valor do alt atributo:
+<img src="wrongname.gif" alt="Flowers in Chania">
+
+
+Tamanho da imagem - largura e altura
+Você pode usar o styleatributo para especificar a largura e a altura de uma imagem.
+<img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+
+Como alternativa, você pode usar os atributos widthe :height
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+
+Os atributos width e height sempre definem a largura e a altura da imagem em pixels.
+
+
+Largura e Altura, ou Estilo?
+Os atributos width, heighte stylesão todos válidos em HTML.
+No entanto, sugerimos usar o styleatributo. Impede que as folhas de estilos alterem o tamanho das imagens:
+
+<style>
+img {
+  width: 100%;
+}
+</style>
+
+<img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+
+<img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+
+Imagens em outra pasta
+Se você tiver suas imagens em uma subpasta, deverá incluir o nome da pasta no srcatributo:
+<img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+
+Imagens em outro servidor/site
+Alguns sites apontam para uma imagem em outro servidor.
+Para apontar para uma imagem em outro servidor, você deve especificar uma URL absoluta (completa) no srcatributo:
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+
+
+Imagens animadas
+HTML permite GIFs animados:
+<img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+
+
+Imagem como um link
+Para usar uma imagem como link, coloque a <img>tag dentro da <a> tag:
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+
+Imagem flutuante
+Use a propriedade CSS floatpara deixar a imagem flutuar à direita ou à esquerda de um texto:
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+The image will float to the right of the text.</p>
+
+<p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+The image will float to the left of the text.</p>
+
+
+Use o elemento HTML <img> para definir uma imagem
+Use o atributo HTML src para definir o URL da imagem
+Use o atributo HTML alt para definir um texto alternativo para uma imagem, se ela não puder ser exibida
+Use o HTML widthe os height atributos ou o CSS widthe as height propriedades para definir o tamanho da imagem
+Use a propriedade CSS float para deixar a imagem flutuar para a esquerda ou para a direita
+
+  </body>
+</html>

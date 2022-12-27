@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> ELEMENTO PICTURE </title>
+  </head>
+  <body>
+    <h1> ELEMENTO PICTURE </h1>
+    <p> O elemento HTML <picture>permite exibir imagens diferentes para diferentes dispositivos ou tamanhos de tela. </p>
+
+            O elemento HTML <picture>
+            O elemento HTML <picture>oferece aos desenvolvedores da Web mais flexibilidade na especificação de recursos de imagem.
+            O <picture> elemento contém um ou mais <source> elementos, cada um referindo-se a diferentes imagens por meio do srcset atributo. Desta forma, o navegador pode escolher a imagem que melhor se adapta à visualização e/ou dispositivo atual.
+            Cada <source> elemento possui um mediaatributo que define quando a imagem é a mais adequada.
+            Mostrar imagens diferentes para diferentes tamanhos de tela:
+            
+            <picture>
+              <source media="(min-width: 650px)" srcset="img_food.jpg">
+              <source media="(min-width: 465px)" srcset="img_car.jpg">
+              <img src="img_girl.jpg">
+            </picture>
+
+
+            Quando usar o elemento de imagem
+Existem dois propósitos principais para o <picture> elemento:
+
+1. Largura de banda
+Se você tiver uma tela ou dispositivo pequeno, não é necessário carregar um arquivo de imagem grande. O navegador usará o primeiro <source> elemento com valores de atributo correspondentes e ignorará qualquer um dos elementos a seguir.
+
+2. Suporte ao formato
+Alguns navegadores ou dispositivos podem não suportar todos os formatos de imagem. Ao usar o <picture>elemento, você pode adicionar imagens de todos os formatos, e o navegador usará o primeiro formato que reconhecer e ignorará qualquer um dos seguintes elementos.
+O navegador usará o primeiro formato de imagem que reconhecer:
+
+<picture>
+  <source srcset="img_avatar.png">
+  <source srcset="img_girl.jpg">
+  <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+</picture>
+
+<img>	Defines an image
+<map>	Defines an image map
+<area>	Defines a clickable area inside an image map
+<picture>	Defines a container for multiple image resources

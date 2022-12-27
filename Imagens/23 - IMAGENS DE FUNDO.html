@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> IMAGENS DE FUNDO </title>
+  </head>
+  <body>
+    <h1> IMAGENS DE FUNDO </h1>
+    <p> Uma imagem de fundo pode ser especificada para quase qualquer elemento HTML. </p>
+
+    Imagem de fundo em um elemento HTML
+Para adicionar uma imagem de fundo em um elemento HTML, use o styleatributo HTML e a background-imagepropriedade CSS:
+Adicione uma imagem de fundo em um elemento HTML:
+<p style="background-image: url('img_girl.jpg');">
+
+Você também pode especificar a imagem de fundo no style elemento, na head seção:
+
+Especifique a imagem de fundo no style elemento:
+<style>
+p {
+  background-image: url('img_girl.jpg');
+}
+</style>
+
+
+Imagem de fundo em uma página
+Se você quiser que a página inteira tenha uma imagem de fundo, você deve especificar a imagem de fundo no <body> elemento:
+Adicione uma imagem de fundo para a página inteira:
+<style>
+body {
+  background-image: url('img_girl.jpg');
+}
+</style>
+
+
+fundo de repetição
+Se a imagem de fundo for menor que o elemento, a imagem se repetirá, horizontal e verticalmente, até chegar ao final do elemento:
+<style>
+body {
+  background-image: url('example_img_girl.jpg');
+}
+</style>
+
+Para evitar que a imagem de fundo se repita, defina a background-repeatpropriedade como no-repeat.
+<style>
+body {
+  background-image: url('example_img_girl.jpg');
+  background-repeat: no-repeat;
+}
+</style>
+
+
+Capa de fundo
+Se você quiser que a imagem de fundo cubra todo o elemento, você pode definir a background-sizepropriedade como cover.
+Além disso, para garantir que todo o elemento esteja sempre coberto, defina a background-attachment propriedade como fixed:
+Dessa forma, a imagem de fundo cobrirá todo o elemento, sem esticar (a imagem manterá suas proporções originais):
+<style>
+body {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+
+Alongamento de fundo
+Se você quiser que a imagem de fundo se estique para caber em todo o elemento, você pode definir a background-size propriedade como 100% 100%:
+Tente redimensionar a janela do navegador e você verá que a imagem se alongará, mas sempre cobrirá todo o elemento.
+<style>
+body {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
