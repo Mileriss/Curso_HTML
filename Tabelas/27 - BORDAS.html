@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> BORDAS </title>
+  </head>
+  <body>
+    <h1> BORDAS </h1>
+    <p> As tabelas HTML podem ter bordas de diferentes estilos e formas. </p>
+
+Como adicionar uma borda
+Ao adicionar uma borda a uma tabela, você também adiciona bordas ao redor de cada célula da tabela:
+Para adicionar uma borda, use a borderpropriedade CSS nos elementos table, the td:
+
+table, th, td {
+border: 1px solid black;
+}
+
+Bordas de tabela recolhidas
+Para evitar bordas duplas como no exemplo acima, defina a border-collapse propriedade CSS como collapse.
+Isso fará com que as bordas sejam reduzidas em uma única borda:
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+
+Estilizar bordas da tabela
+Se você definir uma cor de fundo para cada célula e der à borda uma cor branca (igual ao fundo do documento), você terá a impressão de uma borda invisível:
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+}
+
+
+Bordas da Mesa Redonda
+Com a border-radiuspropriedade, as bordas ganham cantos arredondados:
+
+table, th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+
+Pule a borda ao redor da mesa deixando de fora tabledo seletor css:
+
+th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+
+Bordas pontilhadas da mesa
+Com a border-style propriedade, você pode definir a aparência da borda.
+ 	 	 
+Os seguintes valores são permitidos:
+
+dotted     
+dashed     
+solid     
+double     
+groove     
+ridge     
+inset     
+outset     
+none     
+hidden     
+
+ th, td {
+  border-style: dotted;
+}
+
+
+Cor da borda
+Com a border-colorpropriedade, você pode definir a cor da borda.
+
+ th, td {
+  border-color: #96D4D4;
+}
+
+  </body>
+</html>

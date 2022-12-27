@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> GRUPO DA TABELA </title>
+  </head>
+  <body>
+    <h1> GRUPO DA TABELA </h1>
+    <p> O <colgroup>elemento é usado para estilizar colunas específicas de uma tabela. </p>
+
+        Grupo de tabela HTML
+        Se você quiser estilizar as duas primeiras colunas de uma tabela, use os elementos <colgroup> e <col> .
+        
+        SEG	TER	CASAR	QUI	SEX	SENTADO	SOL
+        1	2	3	4	5	6	7
+        8	9	10	11	12	13	14
+        15	16	17	18	19	20	21
+        22	23	24	25	26	27	28
+        O <colgroup>elemento deve ser usado como um contêiner para as especificações da coluna.
+        
+        Cada grupo é especificado com um <col>elemento.
+        O spanatributo especifica quantas colunas obtém o estilo.
+        O styleatributo especifica o estilo para fornecer as colunas.
+        Nota: Há uma seleção muito limitada de propriedades CSS legais para colgroups .
+        
+        <table>
+          <colgroup>
+            <col span="2" style="background-color: #D6EEEE">
+          </colgroup>
+          <tr>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+        ...
+
+
+        Propriedades legais de CSS
+        Há apenas uma seleção muito limitada de propriedades CSS que podem ser usadas no colgroup:
+        
+        width propriedades
+        visibility propriedades
+        background propriedades
+        border propriedades
+        
+        Todas as outras propriedades CSS não terão efeito em suas tabelas.
+
+
+        Vários elementos de coluna
+        Se você quiser estilizar mais colunas com estilos diferentes, use mais <col>elementos dentro do <colgroup>:
+        
+        <table>
+          <colgroup>
+            <col span="2" style="background-color: #D6EEEE">
+            <col span="3" style="background-color: pink">
+          </colgroup>
+          <tr>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+        ...
+
+        Grupos vazios
+        Se você quiser estilizar colunas no meio de uma tabela, insira um elemento "vazio" <col>(sem estilos) para as colunas anteriores:
+        
+        <table>
+          <colgroup>
+            <col span="3">
+            <col span="2" style="background-color: pink">
+          </colgroup>
+          <tr>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+        ...
+
+
+        Ocultar colunas
+        Você pode ocultar colunas com a visibility: collapsepropriedade:
+        
+        <table>
+          <colgroup>
+            <col span="2">
+            <col span="3" style="visibility: collapse">
+          </colgroup>
+          <tr>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+        ...
+
+
+  </body>
+</html>

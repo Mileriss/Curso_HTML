@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> CABEÇALHOS DE TABELA </title>
+  </head>
+  <body>
+    <h1> CABEÇALHOS DE TABELA </h1>
+    <p> As tabelas HTML podem ter cabeçalhos para cada coluna ou linha, ou para muitas colunas/linhas. </p>
+
+
+    Cabeçalhos de tabela HTML
+    Os cabeçalhos das tabelas são definidos com thelementos, cada thelemento representa uma célula da tabela.
+
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+
+
+    Cabeçalhos de tabela vertical
+    Para usar a primeira coluna como cabeçalho de tabela, defina a primeira célula em cada linha como um thelemento:
+    
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <td>Jill</td>
+        <td>Eve</td>
+      </tr>
+      <tr>
+        <th>Lastname</th>
+        <td>Smith</td>
+        <td>Jackson</td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td>94</td>
+        <td>50</td>
+      </tr>
+    </table>
+
+
+    Alinhar cabeçalhos de tabela
+    Por padrão, os cabeçalhos das tabelas estão em negrito e centralizados:
+    Primeiro nome	Último nome	Idade
+    Jill	Smith	50
+    véspera	Jackson	94
+    Para alinhar à esquerda os cabeçalhos da tabela, use a text-alignpropriedade CSS:
+    
+    th {
+      text-align: left;
+    }
+
+
+    Cabeçalho para várias colunas
+    Você pode ter um cabeçalho que se estende por duas ou mais colunas.
+    
+    Nome	Idade
+    Jill	Smith	50
+    véspera	Jackson	94
+    Para fazer isso, use o colspanatributo no <th> elemento:
+    
+    <table>
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+
+
+    Legenda da tabela
+    Você pode adicionar uma legenda que serve como cabeçalho para toda a tabela.
+    
+    Economias mensais
+    Mês	Poupança
+    Janeiro	$ 100
+    fevereiro	$ 50
+    Para adicionar uma legenda a uma tabela, use a <caption> tag:
+    
+    <table style="width:100%">
+      <caption>Monthly savings</caption>
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>January</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>February</td>
+        <td>$50</td>
+      </tr>
+    </table>
+
+
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> ESTILO DA TABELA </title>
+  </head>
+  <body>
+    <h1> ESTILO DA TABELA </h1>
+    <p>  </p>
+
+    Tabela HTML - Listras Zebra
+Se você adicionar uma cor de fundo em todas as outras linhas da tabela, você obterá um bom efeito de listras de zebra.
+
+1	2	3	4
+5	6	7	8
+9	10	11	12
+13	14	15	16
+17	18	19	20
+Para estilizar todos os outros elementos de linha da tabela, use o :nth-child(even) seletor assim:
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+
+Tabela HTML - Listras de zebra verticais
+Para fazer listras de zebra verticais, estilize todas as outras colunas , em vez de todas as outras linhas .
+
+1	2	3	4
+5	6	7	8
+9	10	11	12
+13	14	15	16
+17	18	19	20
+Defina os :nth-child(even)elementos de dados da tabela como este:
+
+td:nth-child(even), th:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+
+Combine listras de zebra verticais e horizontais
+Você pode combinar o estilo dos dois exemplos acima e terá listras em todas as outras linhas e colunas.
+Se você usar uma cor transparente, obterá um efeito de sobreposição.
+Use uma rgba()cor para especificar a transparência da cor:
+
+tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+
+Divisores horizontais
+Primeiro nome	Último nome	Poupança
+Peter	Grifo	$ 100
+Lois	Grifo	$ 150
+João	Swanson	$ 300
+Se você especificar bordas apenas na parte inferior de cada linha da tabela, terá uma tabela com divisores horizontais.
+Adicione a border-bottompropriedade a todos os trelementos para obter divisores horizontais:
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+
+Mesa flutuante
+Use o :hoverseletor trpara destacar as linhas da tabela ao passar o mouse:
+Primeiro nome	Último nome	Poupança
+Peter	Grifo	$ 100
+Lois	Grifo	$ 150
+João	Swanson	$ 300
+
+tr:hover {background-color: #D6EEEE;}
+
+  </body>
+</html>
