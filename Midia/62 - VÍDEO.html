@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> VÍDEO </title>
+  </head>
+  <body>
+    <h1> VÍDEO </h1>
+    <p> O elemento HTML <video>é usado para mostrar um vídeo em uma página da web. </p>
+
+
+        O elemento HTML <video>
+            Para mostrar um vídeo em HTML, use o <video>elemento:
+            
+            <video width="320" height="240" controls>
+              <source src="movie.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+            </video>
+
+
+            Como funciona
+            O controlsatributo adiciona controles de vídeo, como reproduzir, pausar e volume.
+            É uma boa ideia incluir sempre widthe heightatributos. Se a altura e a largura não estiverem definidas, a página poderá piscar enquanto o vídeo é carregado.
+            O <source>elemento permite especificar arquivos de vídeo alternativos que o navegador pode escolher. O navegador usará o primeiro formato reconhecido.
+            O texto entre as tags <video>e </video>só será exibido em navegadores que não suportam o <video>elemento.
+
+
+                HTML <vídeo> Reprodução automática
+                    Para iniciar um vídeo automaticamente, use o autoplayatributo:
+                    
+                    <video width="320" height="240" autoplay>
+                      <source src="movie.mp4" type="video/mp4">
+                      <source src="movie.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                    </video>
+
+                    Adicione muted depois autoplaypara permitir que seu vídeo comece a ser reproduzido automaticamente (mas silenciado):
+
+                    <video width="320" height="240" autoplay muted>
+                      <source src="movie.mp4" type="video/mp4">
+                      <source src="movie.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                    </video>
+
+                    Vídeo HTML - Métodos, Propriedades e Eventos
+                    O HTML DOM define métodos, propriedades e eventos para o <video> elemento.
+                    Isso permite carregar, reproduzir e pausar vídeos, além de definir a duração e o volume.                    
+                    Há também eventos DOM que podem notificá-lo quando um vídeo começa a ser reproduzido, é pausado etc.
+                    
+
+                        <video>	Defines a video or movie
+                        <source>	Defines multiple media resources for media elements, such as <video> and <audio>
+                        <track>	Defines text tracks in media players
+
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> ÁUDIO </title>
+  </head>
+  <body>
+    <h1> ÁUDIO </h1>
+    <p> O elemento HTML <audio>é usado para reproduzir um arquivo de áudio em uma página da web. </p>
+
+        O elemento HTML <audio>
+            Para reproduzir um arquivo de áudio em HTML, use o <audio>elemento:
+            
+            <audio controls>
+              <source src="horse.ogg" type="audio/ogg">
+              <source src="horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+
+
+            Áudio HTML - Como funciona
+            O controls atributo adiciona controles de áudio, como reproduzir, pausar e volume.
+            O <source> elemento permite especificar arquivos de áudio alternativos que o navegador pode escolher. O navegador usará o primeiro formato reconhecido.
+            O texto entre as tags <audio>e </audio>só será exibido em navegadores que não suportam o <audio>elemento.
+
+
+                HTML <áudio> Reprodução automática
+                Para iniciar um arquivo de áudio automaticamente, use o autoplayatributo:
+                
+                <audio controls autoplay>
+                  <source src="horse.ogg" type="audio/ogg">
+                  <source src="horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+
+                Adicione muted depois autoplaypara permitir que seu arquivo de áudio comece a ser reproduzido automaticamente (mas silenciado):
+
+                <audio controls autoplay muted>
+                  <source src="horse.ogg" type="audio/ogg">
+                  <source src="horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+
+
+                Áudio HTML - Métodos, Propriedades e Eventos
+                O HTML DOM define métodos, propriedades e eventos para o <audio>elemento.
+                Isso permite carregar, reproduzir e pausar áudios, bem como definir a duração e o volume.
+                Há também eventos DOM que podem notificá-lo quando um áudio começa a tocar, é pausado, etc.
+                Para obter uma referência completa do DOM, acesse nossa Referência do DOM de áudio/vídeo HTML .
+                
+
+                Tags de áudio HTML
+
+                <audio>	Defines sound content
+                <source> Defines multiple media resources for media elements, such as <video> and <audio>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
