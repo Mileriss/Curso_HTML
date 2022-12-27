@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> ATRIBUTOS DE FORMULÁRIO </title>
+  </head>
+  <body>
+    <h1> ATRIBUTOS DE FORMULÁRIO </h1>
+    <p> Este capítulo descreve os diferentes atributos para o <form>elemento HTML. </p>
+
+
+        O atributo de ação
+        O action atributo define a ação a ser executada quando o formulário for enviado.
+        Normalmente, os dados do formulário são enviados para um arquivo no servidor quando o usuário clica no botão enviar.
+        
+        No exemplo abaixo, os dados do formulário são enviados para um arquivo chamado "action_page.php". Este arquivo contém um script do lado do servidor que manipula os dados do formulário:
+        
+        Ao enviar, envie os dados do formulário para "action_page.php":
+        
+        <form action="/action_page.php">
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="John"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Doe"><br><br>
+          <input type="submit" value="Submit">
+        </form>
+
+
+        O atributo alvo
+        O target atributo especifica onde exibir a resposta recebida após o envio do formulário.
+        
+        O target atributo pode ter um dos seguintes valores:
+        
+        Value	Description
+        _blank	The response is displayed in a new window or tab
+        _self	The response is displayed in the current window
+        _parent	The response is displayed in the parent frame
+        _top	The response is displayed in the full body of the window
+        framename	The response is displayed in a named iframe
+        O valor padrão é _selfo que significa que a resposta será aberta na janela atual.
+        
+        Aqui, o resultado enviado será aberto em uma nova guia do navegador:
+        
+        <form action="/action_page.php" target="_blank">
+
+
+            O atributo de método
+            O methodatributo especifica o método HTTP a ser usado ao enviar os dados do formulário.
+            Os dados do formulário podem ser enviados como variáveis ​​de URL (com method="get") ou como transação de postagem HTTP (com method="post").
+            O método HTTP padrão ao enviar dados de formulário é GET. 
+            
+            Este exemplo usa o método GET ao enviar os dados do formulário:
+            <form action="/action_page.php" method="get">
+
+            Este exemplo usa o método POST ao enviar os dados do formulário:
+            <form action="/action_page.php" method="post">
+
+            Observações sobre GET:
+            Anexa os dados do formulário à URL, em pares nome/valor
+            NUNCA use GET para enviar dados confidenciais! (os dados do formulário enviado são visíveis na URL!)
+            O comprimento de um URL é limitado (2048 caracteres)
+            Útil para envios de formulários em que um usuário deseja marcar o resultado
+            GET é bom para dados não seguros, como strings de consulta no Google
+
+            Observações sobre o POST:
+            Anexa os dados do formulário dentro do corpo da solicitação HTTP (os dados do formulário enviado não são mostrados na URL)
+            O POST não tem limitações de tamanho e pode ser usado para enviar grandes quantidades de dados.
+            Envios de formulários com POST não podem ser marcados
+
+
+            O atributo de preenchimento automático
+            O autocomplete atributo especifica se um formulário deve ter o preenchimento automático ativado ou desativado.
+            Quando o preenchimento automático está ativado, o navegador completa automaticamente os valores com base nos valores que o usuário inseriu anteriormente.
+            
+            Um formulário com preenchimento automático em:
+            <form action="/action_page.php" autocomplete="on">
+
+
+                O atributo Novalidate
+                O novalidateatributo é um atributo booleano.
+                Quando presente, especifica que os dados do formulário (entrada) não devem ser validados quando enviados.
+                
+                Um formulário com um atributo novalidate:
+                <form action="/action_page.php" novalidate>
+                
+
+aceitar-charset	- Especifica as codificações de caracteres usadas para envio de formulário
+ação - Especifica para onde enviar os dados do formulário quando um formulário é enviado
+autocompletar - Especifica se um formulário deve ter o preenchimento automático ativado ou desativado
+enctype - Especifica como os dados do formulário devem ser codificados ao enviá-los ao servidor (somente para method="post")
+método - Especifica o método HTTP a ser usado ao enviar dados de formulário
+nome - Especifica o nome do formulário
+novalidar - Especifica que o formulário não deve ser validado quando enviado
+rel -	Especifica a relação entre um recurso vinculado e o documento atual
+alvo - Especifica onde exibir a resposta recebida após o envio do formulário
+
+  </body>
+</html>

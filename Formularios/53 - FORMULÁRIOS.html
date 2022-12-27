@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> FORMULÁRIOS </title>
+  </head>
+  <body>
+    <h1> FORMULÁRIOS </h1>
+    <p> Um formulário HTML é usado para coletar a entrada do usuário. A entrada do usuário é mais frequentemente enviada a um servidor para processamento.    </p>
+
+
+        O elemento <form>
+        O elemento HTML <form>é usado para criar um formulário HTML para entrada do usuário:
+        
+        <form>
+        .
+        form elements
+        .
+        </form>
+        O <form>elemento é um contêiner para diferentes tipos de elementos de entrada, como: campos de texto, caixas de seleção, botões de opção, botões de envio, etc.
+        
+        Todos os diferentes elementos de formulário são abordados neste capítulo: Elementos de formulário HTML .
+
+
+        O elemento <input>
+        O elemento HTML <input>é o elemento de formulário mais usado.
+        Um <input>elemento pode ser exibido de várias maneiras, dependendo do type atributo.
+        
+        aqui estão alguns exemplos:
+
+        Tipo	Descrição
+        <input type="texto">	Exibe um campo de entrada de texto de linha única
+        <input type="radio">	Exibe um botão de opção (para selecionar uma das muitas opções)
+        <input type="checkbox">	Exibe uma caixa de seleção (para selecionar zero ou mais de muitas opções)
+        <input type="enviar">	Exibe um botão enviar (para enviar o formulário)
+        <input type="botão">	Exibe um botão clicável
+        Todos os diferentes tipos de entrada são abordados neste capítulo: Tipos de entrada HTML .
+        
+        
+        Campos de texto
+        O <input type="text">define um campo de entrada de linha única para entrada de texto.
+
+        Um formulário com campos de entrada para texto:
+        
+        <form>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname">
+        </form>
+
+
+        O elemento <label>
+            Observe o uso do <label>elemento no exemplo acima.    
+            A <label>tag define um rótulo para muitos elementos de formulário.
+            O <label>elemento é útil para usuários de leitores de tela, porque o leitor de tela lerá em voz alta o rótulo quando o usuário focar no elemento de entrada.
+            O <label>elemento também ajuda os usuários que têm dificuldade em clicar em regiões muito pequenas (como botões de opção ou caixas de seleção) - porque quando o usuário clica no texto dentro do <label>elemento, ele alterna o botão de opção/caixa de seleção.
+            O foratributo da <label>tag deve ser igual ao idatributo do <input> elemento para ligá-los.
+
+
+                Botões do rádio
+                O <input type="radio">define um botão de rádio.
+                Os botões de opção permitem que o usuário selecione UMA dentre um número limitado de opções.
+                Um formulário com botões de opção:
+                
+                <p>Choose your favorite Web language:</p>
+                
+                <form>
+                  <input type="radio" id="html" name="fav_language" value="HTML">
+                  <label for="html">HTML</label><br>
+                  <input type="radio" id="css" name="fav_language" value="CSS">
+                  <label for="css">CSS</label><br>
+                  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                  <label for="javascript">JavaScript</label>
+                </form>
+
+
+                Caixas de seleção
+                O <input type="checkbox">define uma caixa de seleção .
+                As caixas de seleção permitem que um usuário selecione ZERO ou MAIS opções de um número limitado de opções.
+                
+                Um formulário com caixas de seleção:
+                
+                <form>
+                  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                  <label for="vehicle1"> I have a bike</label><br>
+                  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                  <label for="vehicle2"> I have a car</label><br>
+                  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                  <label for="vehicle3"> I have a boat</label>
+                </form>
+
+
+                O botão Enviar
+                O <input type="submit">define um botão para enviar os dados do formulário para um manipulador de formulários.
+                O manipulador de formulário geralmente é um arquivo no servidor com um script para processar dados de entrada.
+                O manipulador de formulário é especificado no action atributo do formulário.
+                
+                Um formulário com um botão de envio:
+                
+                <form action="/action_page.php">
+                  <label for="fname">First name:</label><br>
+                  <input type="text" id="fname" name="fname" value="John"><br>
+                  <label for="lname">Last name:</label><br>
+                  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                  <input type="submit" value="Submit">
+                </form>
+
+
+                O atributo de nome para <input>
+                Observe que cada campo de entrada deve ter um nameatributo a ser enviado.
+                Se o nameatributo for omitido, o valor do campo de entrada não será enviado.
+                
+                Este exemplo não enviará o valor do campo de entrada "Nome": 
+                
+                <form action="/action_page.php">
+                  <label for="fname">First name:</label><br>
+                  <input type="text" id="fname" value="John"><br><br>
+                  <input type="submit" value="Submit">
+                </form>
+
+
+  </body>
+</html>
