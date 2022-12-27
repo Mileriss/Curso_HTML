@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> ATRIBUTOS DE CLASSE </title>
+  </head>
+  <body>
+    <h1> ATRIBUTOS DE CLASSE </h1>
+    <p> O atributo HTML classé usado para especificar uma classe para um elemento HTML.
+
+        Vários elementos HTML podem compartilhar a mesma classe. </p>
+
+
+        Usando o atributo de classe
+        O classatributo é frequentemente usado para apontar para um nome de classe em uma folha de estilo. Ele também pode ser usado por um JavaScript para acessar e manipular elementos com o nome de classe específico.        
+        No exemplo a seguir temos três <div>elementos com um classatributo com o valor "city". Todos os três <div> elementos serão estilizados igualmente de acordo com a .city definição de estilo na seção principal:
+
+        <style>
+        .city {
+          background-color: tomato;
+          color: white;
+          border: 2px solid black;
+          margin: 20px;
+          padding: 20px;
+        }
+        </style>
+        
+        <div class="city">
+          <h2>London</h2>
+          <p>London is the capital of England.</p>
+        </div>
+        
+        <div class="city">
+          <h2>Paris</h2>
+          <p>Paris is the capital of France.</p>
+        </div>
+        
+        <div class="city">
+          <h2>Tokyo</h2>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+        
+        No exemplo a seguir temos dois <span>elementos com um classatributo com o valor "note". Ambos os <span> elementos serão estilizados igualmente de acordo com a .note definição de estilo na seção head:
+
+            <style>
+            .note {
+              font-size: 120%;
+              color: red;
+            }
+            </style>
+            
+            <h1>My <span class="note">Important</span> Heading</h1>
+            <p>This is some <span class="note">important</span> text.</p>
+            
+
+            A sintaxe da classe
+            Para criar uma classe; escreva um caractere ponto (.), seguido por um nome de classe. Em seguida, defina as propriedades CSS entre chaves {}:
+            Crie uma classe chamada "cidade":
+            
+            <style>
+            .city {
+              background-color: tomato;
+              color: white;
+              padding: 10px;
+            }
+            </style>
+            
+            <h2 class="city">London</h2>
+            <p>London is the capital of England.</p>
+            
+            <h2 class="city">Paris</h2>
+            <p>Paris is the capital of France.</p>
+            
+            <h2 class="city">Tokyo</h2>
+            <p>Tokyo is the capital of Japan.</p>
+            
+
+Várias classes
+Elementos HTML podem pertencer a mais de uma classe.
+Para definir várias classes, separe os nomes das classes com um espaço, por exemplo, <div class="city main">. O elemento será estilizado de acordo com todas as classes especificadas.
+No exemplo a seguir, o primeiro <h2>elemento pertence à cityclasse e também à mainclasse e obterá os estilos CSS de ambas as classes: 
+
+<h2 class="city main">London</h2>
+<h2 class="city">Paris</h2>
+<h2 class="city">Tokyo</h2>
+
+
+Diferentes elementos podem compartilhar a mesma classe
+Diferentes elementos HTML podem apontar para o mesmo nome de classe.
+No exemplo a seguir, ambos <h2>e <p> apontam para a classe "city" e compartilharão o mesmo estilo:
+
+<h2 class="city">Paris</h2>
+<p class="city">Paris is the capital of France</p>
+
+
+Uso do atributo class em JavaScript
+O nome da classe também pode ser usado pelo JavaScript para executar determinadas tarefas para elementos específicos.
+JavaScript pode acessar elementos com um nome de classe específico com o getElementsByClassName()método:
+Clique em um botão para ocultar todos os elementos com o nome da classe "cidade":
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+
+
+O atributo HTML classespecifica um ou mais nomes de classe para um elemento
+As classes são usadas por CSS e JavaScript para selecionar e acessar elementos específicos
+O classatributo pode ser usado em qualquer elemento HTML
+O nome da classe diferencia maiúsculas de minúsculas
+Diferentes elementos HTML podem apontar para o mesmo nome de classe
+JavaScript pode acessar elementos com um nome de classe específico com o getElementsByClassName() método
+
+
+  </body>
+</html>

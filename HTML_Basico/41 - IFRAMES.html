@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> IFRAMES </title>
+  </head>
+  <body>
+    <h1> IFRAMES </h1>
+    <p> Um iframe HTML é usado para exibir uma página da Web dentro de uma página da Web. </p>
+
+
+    Sintaxe HTML Iframe
+    A tag HTML <iframe>especifica um quadro embutido.
+    Um quadro embutido é usado para incorporar outro documento no documento HTML atual.
+    <iframe src="url" title="description"></iframe>
+
+
+    Iframe - Definir Altura e Largura
+    Use os atributos heighte para especificar o tamanho do iframe.width
+    A altura e a largura são especificadas em pixels por padrão:
+    <iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>
+
+    você pode adicionar o styleatributo e usar o CSS heighte as width propriedades:
+    <iframe src="demo_iframe.htm" style="height:200px;width:300px;" title="Iframe Example"></iframe>
+
+
+    Iframe - Remova a borda
+    Por padrão, um iframe tem uma borda ao seu redor.
+    
+    Para remover a borda, adicione o styleatributo e use a borderpropriedade CSS:
+    <iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"></iframe>
+
+    Com CSS, você também pode alterar o tamanho, estilo e cor da borda do iframe:
+    <iframe src="demo_iframe.htm" style="border:2px solid red;" title="Iframe Example"></iframe>
+
+
+    Iframe - Destino para um link
+    Um iframe pode ser usado como o quadro de destino para um link.
+    
+    O target atributo do link deve se referir ao name atributo do iframe:
+    <iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"></iframe>
+    
+    <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+
+        A tag HTML <iframe> especifica um frame embutido
+        O src atributo define a URL da página a ser incorporada
+        Sempre inclua um titleatributo (para leitores de tela)
+        Os atributos heightand especificam o tamanho do iframewidth
+        Use border:none;para remover a borda ao redor do iframe
+
+  </body>
+</html>

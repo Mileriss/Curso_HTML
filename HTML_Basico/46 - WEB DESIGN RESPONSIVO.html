@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> WEB DESIGN RESPONSIVO </title>
+  </head>
+  <body>
+    <h1> WEB DESIGN RESPONSIVO </h1>
+    <p> Web design responsivo é sobre a criação de páginas da web que ficam bem em todos os dispositivos!
+
+        Um web design responsivo se ajustará automaticamente a diferentes tamanhos de tela e viewports. </p>
+
+        O que é Web Design Responsivo?
+        Responsive Web Design é usar HTML e CSS para redimensionar, ocultar, reduzir ou ampliar automaticamente um site, para torná-lo bom em todos os dispositivos (computadores, tablets e telefones):
+        
+        
+        Configurando a janela de visualização
+Para criar um site responsivo, adicione a seguinte <meta> tag a todas as suas páginas da web:
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+Isso definirá a janela de visualização de sua página, que fornecerá ao navegador instruções sobre como controlar as dimensões e o dimensionamento da página.
+
+
+Imagens responsivas
+Imagens responsivas são imagens que se adaptam bem a qualquer tamanho de navegador.
+
+
+Usando a propriedade largura
+Se a propriedade CSS widthestiver definida como 100%, a imagem será responsiva e aumentará e diminuirá a escala:
+<img src="img_girl.jpg" style="width:100%;">
+Observe que no exemplo acima, a imagem pode ser ampliada para ser maior que seu tamanho original. Uma solução melhor, em muitos casos, será usar a max-widthpropriedade.
+
+
+Usando a propriedade max-width
+Se a max-widthpropriedade estiver definida como 100%, a imagem será reduzida se for necessário, mas nunca será aumentada para ser maior que seu tamanho original:
+<img src="img_girl.jpg" style="max-width:100%;height:auto;">
+
+
+Mostrar imagens diferentes dependendo da largura do navegador
+O elemento HTML <picture> permite definir imagens diferentes para diferentes tamanhos de janela do navegador.
+Redimensione a janela do navegador para ver como a imagem abaixo muda dependendo da largura:
+
+Flores
+<picture>
+  <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+  <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+  <source srcset="flowers.jpg">
+  <img src="img_smallflower.jpg" alt="Flowers">
+</picture>
+
+
+Tamanho do texto responsivo
+O tamanho do texto pode ser definido com uma unidade "vw", que significa a "largura da janela de visualização".
+Dessa forma, o tamanho do texto seguirá o tamanho da janela do navegador:
+
+Redimensione a janela do navegador para ver como o tamanho do texto é dimensionado.
+<h1 style="font-size:10vw">Hello World</h1>
+
+
+Consultas de mídia
+Além de redimensionar textos e imagens, também é comum utilizar media queries em páginas web responsivas.
+Com consultas de mídia, você pode definir estilos completamente diferentes para diferentes tamanhos de navegador.
+Exemplo: redimensione a janela do navegador para ver que os três elementos div abaixo serão exibidos horizontalmente em telas grandes e empilhados verticalmente em telas pequenas:
+
+<style>
+.left, .right {
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+.main {
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+</style>
+
+
+Página da Web responsiva - Exemplo completo
+Uma página da Web responsiva deve ficar bem em telas de desktop grandes e em telefones celulares pequenos.
+
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .menu {
+      float: left;
+      width: 20%;
+      text-align: center;
+    }
+    
+    .menu a {
+      background-color: #e5e5e5;
+      padding: 8px;
+      margin-top: 7px;
+      display: block;
+      width: 100%;
+      color: black;
+    }
+    
+    .main {
+      float: left;
+      width: 60%;
+      padding: 0 20px;
+    }
+    
+    .right {
+      background-color: #e5e5e5;
+      float: left;
+      width: 20%;
+      padding: 15px;
+      margin-top: 7px;
+      text-align: center;
+    }
+    
+    @media only screen and (max-width: 620px) {
+      /* For mobile phones: */
+      .menu, .main, .right {
+        width: 100%;
+      }
+    }
+    </style>
+    </head>
+    <body style="font-family:Verdana;color:#aaaaaa;">
+    
+    <div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+      <h1>Hello World</h1>
+    </div>
+    
+    <div style="overflow:auto">
+      <div class="menu">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+      </div>
+    
+      <div class="main">
+        <h2>Lorum Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+      </div>
+    
+      <div class="right">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+      </div>
+    </div>
+    
+    <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright w3schools.com</div>
+
+
+  </body>
+</html>

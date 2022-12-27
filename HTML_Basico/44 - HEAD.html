@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> HEAD </title>
+  </head>
+  <body>
+    <h1> HEAD </h1>
+    <!--
+        <p> O elemento HTML <head> é um contêiner para os seguintes elementos: <title>, <style>, <meta>, <link>, <script>e <base>. </p>
+    -->
+
+    O elemento HTML <head>
+        O <head> elemento é um contêiner para metadados (dados sobre dados) e é colocado entre a <html> tag e a <body> tag.
+        Metadados HTML são dados sobre o documento HTML. Os metadados não são exibidos.
+        Metadados normalmente definem o título do documento, conjunto de caracteres, estilos, scripts e outras informações de meta.
+
+
+        O elemento HTML <title>
+            O <title>elemento define o título do documento. O título deve ser somente texto e é mostrado na barra de título do navegador ou na aba da página.            
+            O <title>elemento é obrigatório em documentos HTML!
+            O conteúdo de um título de página é muito importante para a otimização de mecanismos de busca (SEO)! O título da página é usado pelos algoritmos do mecanismo de pesquisa para decidir a ordem ao listar as páginas nos resultados da pesquisa.
+            
+            O <title>elemento:
+            
+            define um título na barra de ferramentas do navegador
+            fornece um título para a página quando ela é adicionada aos favoritos
+            exibe um título para a página nos resultados do mecanismo de pesquisa
+            Portanto, tente tornar o título o mais preciso e significativo possível!
+            
+            Um documento HTML simples:
+            
+            <!DOCTYPE html>
+            <html>
+            <head>
+              <title>A Meaningful Page Title</title>
+            </head>
+            <body>
+            
+            The content of the document......
+            
+            </body>
+            </html>
+
+
+            O elemento HTML style
+                O style elemento é usado para definir informações de estilo para uma única página HTML:
+                
+                style
+                  body {background-color: powderblue;}
+                  h1 {color: red;}
+                  p {color: blue;}
+                style
+                
+
+                O elemento HTML <link>
+                O <link>elemento define o relacionamento entre o documento atual e um recurso externo.
+                
+                A <link> tag é usada com mais frequência para vincular a folhas de estilo externas:
+                <link rel="stylesheet" href="mystyle.css">
+
+                O elemento HTML <meta>
+                O <meta>elemento é normalmente usado para especificar o conjunto de caracteres, descrição da página, palavras-chave, autor do documento e configurações da janela de visualização.
+                
+                Os metadados não serão exibidos na página, mas são usados ​​por navegadores (como exibir conteúdo ou recarregar a página), por mecanismos de pesquisa (palavras-chave) e outros serviços da web.
+                
+                Defina o conjunto de caracteres usado:
+                <meta charset="UTF-8">
+
+                Defina palavras-chave para motores de busca:
+                <meta name="keywords" content="HTML, CSS, JavaScript">
+
+                Defina uma descrição da sua página da web:
+                <meta name="description" content="Free Web tutorials">
+
+                Defina o autor de uma página:
+                <meta name="author" content="John Doe">
+
+                Atualize o documento a cada 30 segundos:
+                <meta http-equiv="refresh" content="30">
+
+                Configurando a janela de visualização para que seu site fique bem em todos os dispositivos:
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                Exemplo de <meta>etiquetas:
+                <meta charset="UTF-8">
+                <meta name="description" content="Free Web tutorials">
+                <meta name="keywords" content="HTML, CSS, JavaScript">
+                <meta name="author" content="John Doe">
+
+
+                Configurando a janela de visualização
+                A janela de visualização é a área visível do usuário de uma página da web. Varia de acordo com o dispositivo - será menor em um telefone celular do que em uma tela de computador.
+                
+                Você deve incluir o seguinte <meta>elemento em todas as suas páginas da web:
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                Isso fornece ao navegador instruções sobre como controlar as dimensões e o dimensionamento da página.
+                A width=device-widthparte define a largura da página para seguir a largura da tela do dispositivo (que varia de acordo com o dispositivo).
+                A initial-scale=1.0parte define o nível de zoom inicial quando a página é carregada pela primeira vez pelo navegador.
+                Aqui está um exemplo de uma página da web sem a meta tag viewport e a mesma página da web com a meta tag viewport:
+
+
+                O elemento HTML script
+                    O script elemento é usado para definir JavaScripts do lado do cliente.
+                    
+                    O JavaScript a seguir escreve "Hello JavaScript!" em um elemento HTML com id="demo":
+                    
+                    script
+                    function myFunction() {
+                      document.getElementById("demo").innerHTML = "Hello JavaScript!";
+                    }
+                    script
+
+
+                    O elemento HTML <base>
+                    O <base>elemento especifica a URL base e/ou destino para todas as URLs relativas em uma página.
+                    A <base>tag deve ter um atributo href ou target presente, ou ambos.
+                    Só pode haver um único <base> elemento em um documento!
+                    
+                    Especifique um URL padrão e um destino padrão para todos os links em uma página:
+                    
+                    <head>
+                    <base href="https://www.w3schools.com/" target="_blank">
+                    </head>
+                    
+                    <body>
+                    <img src="images/stickman.gif" width="24" height="39" alt="Stickman">
+                    <a href="tags/tag_base.asp">HTML base Tag</a>
+                    </body>
+
+
+                    O <head> elemento é um contêiner para metadados (dados sobre dados)
+                        O <head> elemento é colocado entre a <html> tag e a <body> tag
+                        O <title> elemento é obrigatório e define o título do documento
+                        O <style> elemento é usado para definir informações de estilo para um único documento
+                        A <link> tag é mais frequentemente usada para vincular a folhas de estilo externas
+                        O <meta> elemento é normalmente usado para especificar o conjunto de caracteres, descrição da página, palavras-chave, autor do documento e configurações da janela de visualização
+                        O <script> elemento é usado para definir JavaScripts do lado do cliente
+                        O <base> elemento especifica o URL base e/ou destino para todos os URLs relativos em uma página
+
+
+
+  </body>
+</html>
